@@ -9,6 +9,12 @@ body{
 	font-family: 'Rubik', sans-serif;
 	overflow-x: hidden;
 }
+main{
+	overflow-x: hidden;
+	overflow: hidden;
+	overflow-wrap: normal;
+	overflow-y: scroll;
+}
 
 .left{
 	position: absolute;
@@ -270,6 +276,7 @@ input[ type="text"] {
 	border-top-left-radius: 50%;
 	top: 200px;
 	z-index: -1;
+	
 }
 .main{
 	width:100%;
@@ -289,12 +296,14 @@ input[ type="text"] {
 	main{
 		overflow-x: hidden;
 		width: 100%;
+		 -webkit-overflow-scrolling: auto;
 	}
 
 	.main{
 		display: flex;
 		flex-direction: column;
 		margin-left: 30px;
+
 		
 	}
 	.left{
@@ -308,7 +317,8 @@ input[ type="text"] {
 		right: -320px;
 		bottom: 0;
 		top: 650px;
-			}
+		overflow-x: auto;
+		}
 	.chat{
 		width: 20em;
 		margin-bottom: 90px;
